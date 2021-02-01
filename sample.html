@@ -1,0 +1,117 @@
+<html>
+<head>
+<style>
+form{
+  position :relative;
+  margin-left :850px;
+  top : 1px;
+  color :white;
+}
+body{
+   background-image : url("img1.jpg");
+  }
+img {
+    position:relative;
+   top : -560px;
+   left : 280px;
+   height : 500px;
+   width  : 530px;
+ }
+ h1{
+   padding: 20px;
+  border: 1px solid #4CAF50;
+  color : white;
+  background-color :black;
+ }
+ h2{
+   position : relative;
+   top : -60px;
+   color : white;
+ }
+ ul {
+  list-style-type: none;
+  margin:-6px;
+  padding:3px;
+  overflow: hidden;
+  background-color: #333;
+  position :relative;
+  top :-10px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+</style>
+</head>
+<body>
+<script>  
+function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value; 
+var mobile=document.myform.phone.value; 
+var repass=document.myform.repassword.value;
+var location=document.myform.location.value;
+var date=document.myform.date.value;
+var email=document.myform.Email.value;
+if(name=="" || password=="" || mobile=="" || repass=="" || location=="" || date=="" ||email==""){
+  alert("Fields are empty");
+  return false;
+ }
+ if (name==null || name==""){  
+  alert("Name Field should be filled");  
+  return false;  
+}
+ if(password.length<6){  
+  alert("Note :Password must be at least 6 characters long.");  
+  return false;  
+  } 
+ if(mobile.length<10||mobile.length>10){
+     alert("Wrong Input For Phone");
+     return false;
+ } 
+ if(repass!=password){
+    alert("Invalid input for Re-enter password");
+    return false;
+}
+}  
+</script>  
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+<h2 align="center">Online Car Store</h2>
+<form name="myform" method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validateform()" >
+<p name="demo">User Name:</p>  
+<input type="text" name="name"><br/>
+<p name="demo">Email:</p>
+<input type="email" name="Email">
+<p name="demo">Phone Number :</p>
+<input type="text" name="phone"><br/>
+<p name="demo">Location :</p>
+<input type="text" name="location"><br/>
+<p name="demo">Date :</p>
+<input type="date" name="date"><br/>
+<p name="demo">Password</p>
+<input type="password" name="password"><br/>
+<p name="demo">Re-Enter Password :</p>
+<input type="password" name="repassword"><br/> 
+<p name="demo"></p><br/> 
+<input type="submit" value="register">  
+</form>  
+<img src="G:\2nd year\sem-2\ep\Skilling\project\dodge7.gif"/>
+</body>
+</html>

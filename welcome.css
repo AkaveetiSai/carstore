@@ -1,0 +1,112 @@
+body{
+    background-image : url("mark5.jpg");
+  }
+ .marquee {
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+ background: powderblue;
+ color: black;
+ font-size : 50px;
+ border: 1px solid orange;
+}
+<style style="text/css">
+.marquee {
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+ top : -20px;
+ background: yellow;
+ color: orange;
+ border: 1px solid orange;
+}
+.marquee p {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);	
+ transform:translateX(100%);
+ /* Apply animation to this element */	
+ -moz-animation: scroll-left 15s linear infinite;
+ -webkit-animation: scroll-left 15s linear infinite;
+ animation: scroll-left 15s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-left {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scroll-left {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Browser bug fix */
+ -webkit-transform: translateX(100%); /* Browser bug fix */
+ transform: translateX(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Browser bug fix */
+ -webkit-transform: translateX(-100%); /* Browser bug fix */
+ transform: translateX(-100%); 
+ }
+}
+
+ul {
+  list-style-type: none;
+  margin:-6px;
+  padding:3px;
+  overflow: hidden;
+  background-color: #333;
+  position :relative;
+  top :-10px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+h2{
+  color : white;
+  text-align: center;
+  text-shadow : 2px 2px 5px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 40px;
+ }
+#hname{
+  color : white;
+  margin-left : 100px;
+  text-shadow : 2px 2px 5px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 40px;
+ }
+a {
+  color:red;
+ }
+form {
+  position : relative;
+  margin-left : 1300px;
+  top: -50px;
+}
+#fname{
+  position :relative;
+  left :90px;
+  top :-87px;
+}
