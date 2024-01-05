@@ -1,5 +1,7 @@
 # Architecture Description
-![28](https://github.com/AkaveetiSai/carstore/assets/74001902/52139dc0-8748-4aaf-93b6-58afdce8d7c2)
+
+![assets_-LgLv25e2BrxRC5m6flh_-LiRaWYeeyfVw0UcP6N1_-LiReuowSS1wOL09A5fI_code deploy](https://github.com/AkaveetiSai/carstore/assets/74001902/56769025-ee58-4e39-a714-3afc0be6c067)
+
 
 The image depicts a simplified architecture of a deployment pipeline, but it doesn't provide detailed architectural elements or structures typically associated with building or infrastructure design. Therefore, I need to focus on the components and flow represented in the diagram.
 
